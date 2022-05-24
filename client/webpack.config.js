@@ -15,7 +15,7 @@ module.exports = () => {
       // cards: './src/js/cards.js'
     },
     output: {
-      filename: '[name].bundle.js',
+      filename: 'haley.bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
@@ -55,11 +55,16 @@ module.exports = () => {
 
     module: {
       rules: [
-        // CSS loader
+        // default CSS loader (we also learned about miniCSSExtractPlugin.loader)
         {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
         },
+        // TODO: I added this - do I want it?? 
+        // {
+        //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        //   type: 'asset/resource',
+        // },
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
@@ -76,3 +81,5 @@ module.exports = () => {
     },
   };
 };
+
+// No hot module replacement 

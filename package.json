@@ -21,5 +21,9 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4"
+  },
+  "comments": {
+    "comment-start:dev": "Script uses concurrently to start client and server apps at same time",
+    "comment-concurrently": "Concurrently is installed as a dev dependency to allow client and server to be started using single script"
   }
 }

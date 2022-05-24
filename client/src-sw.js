@@ -24,6 +24,7 @@ warmStrategyCache({
   strategy: pageCache,
 });
 
+// change navigate to 'style' || 'script' ??
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 // TODO: Implement asset caching
