@@ -12,17 +12,18 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js',
-      // cards: './src/js/cards.js'
+      // TODO: I ADDED THESE
+      header: './src/js/header.js',
+      editor: './src/js/editor.js'
     },
     output: {
-      filename: 'haley.bundle.js',
+      filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      // Webpack pligin to generate html and inject bundle
+      // Webpack plugin to generate html and inject bundle
       new HtmlWebpackPlugin({
         template: './index.html',
-        // TODO: add a better title
         title: 'Notes or Code Snippets'
       }),
 
@@ -39,8 +40,8 @@ module.exports = () => {
         name: 'Notes or Code Snippets',
         short_name: 'Notes',
         description: 'Nodes or Code Snippets',
-        // background_color: '#225ca3',
-        // theme_color: '#225ca3',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
         start_url: '/',
         publicPath: '/',
         icons: [
@@ -60,11 +61,10 @@ module.exports = () => {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
         },
-        // TODO: I added this - do I want it?? 
-        // {
-        //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        //   type: 'asset/resource',
-        // },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
+        },
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
