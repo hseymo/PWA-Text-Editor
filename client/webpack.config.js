@@ -12,9 +12,6 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js',
-      // TODO: I ADDED THESE
-      header: './src/js/header.js',
-      editor: './src/js/editor.js'
     },
     output: {
       filename: '[name].bundle.js',
@@ -56,14 +53,10 @@ module.exports = () => {
 
     module: {
       rules: [
-        // default CSS loader (we also learned about miniCSSExtractPlugin.loader)
+        // default CSS loader
         {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
-        },
-        {
-          test: /\.(png|svg|jpg|jpeg|gif)$/i,
-          type: 'asset/resource',
         },
         {
           test: /\.m?js$/,
@@ -81,5 +74,3 @@ module.exports = () => {
     },
   };
 };
-
-// No hot module replacement 
