@@ -1,4 +1,4 @@
-# **[PWA-Text-Editor](URL)**
+# **[PWA-Text-Editor](https://warm-inlet-24110.herokuapp.com/)**
 
 ![Badge](https://img.shields.io/badge/license-MIT-blue)
 
@@ -79,15 +79,14 @@ NPM Packages
  The goal of this project is to build an Progressive Web Application with starter code for a basic text editor. This application is intended for notes or code snippets. It uses the Service Worker and Cache APIs to cache assets and API responses, which help the application run without an internet connection. It utilizes Webpack and Workbox to deliver optimized, bundled code and modular CSS. Additionally, it uses Babel transpiler to use ES6 Javascript syntax. 
  
  <br><br>
-Please visit this [link](URL) for the deployed application. <br><br>
+Please visit this [link](https://warm-inlet-24110.herokuapp.com/) for the deployed application. <br><br>
 
 ## Usage
 ---
 After following the instructions in installation: 
 1. Open your root level file in your integrated terminal.
-2. Use the following commands as specified in the `package.json` file: 
+2. Run `npm start` or use the other commands as specified in the `package.json` file: 
 ![screenshot](./assets/Screen%20Shot%202022-05-25%20at%205.39.56%20PM.png)
-3. Suggest running `npm build` followed by `npm start:dev` OR `npm start`
 4. Open your browser to `localhost:3000` and see me in action!
 <br>
 
