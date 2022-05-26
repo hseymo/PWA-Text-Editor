@@ -36,7 +36,7 @@ module.exports = () => {
         inject: true,
         name: 'Notes or Code Snippets',
         short_name: 'Notes',
-        description: 'Nodes or Code Snippets',
+        description: 'Notes or Code Snippets',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: '/',

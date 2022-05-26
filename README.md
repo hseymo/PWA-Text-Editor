@@ -76,7 +76,7 @@ NPM Packages
 
 ## Description
 ---
- The goal of this project is to build an Progressive Web Application with starter code provided. This application is a text editor for notes or code snippets. It uses the Service Worker and Cache APIs to cache assets and API responses, which help the application run without an internet connection. It utilizes Webpack and Workbox to deliver optimized, bundled code and modular CSS. Additionally, it uses Babel transpiler to use ES6 Javascript syntax. 
+ The goal of this project is to build an Progressive Web Application with starter code for a basic text editor. This application is intended for notes or code snippets. It uses the Service Worker and Cache APIs to cache assets and API responses, which help the application run without an internet connection. It utilizes Webpack and Workbox to deliver optimized, bundled code and modular CSS. Additionally, it uses Babel transpiler to use ES6 Javascript syntax. 
  
  <br><br>
 Please visit this [link](URL) for the deployed application. <br><br>
@@ -85,16 +85,22 @@ Please visit this [link](URL) for the deployed application. <br><br>
 ---
 After following the instructions in installation: 
 1. Open your root level file in your integrated terminal.
-2. Run command "npm run start". 
-
-<br>
+2. Use the following commands as specified in the `package.json` file: 
+![screenshot](./assets/Screen%20Shot%202022-05-25%20at%205.39.56%20PM.png)
+3. Suggest running `npm build` followed by `npm start:dev` OR `npm start`
+4. Open your browser to `localhost:3000` and see me in action!
 <br>
 
 ### **Screenshots**
 --- 
-Title <br>
-![screenshot](URL)
+Screenshot of Downloaded PWA <br>
+![screenshot](./assets/PWA.png)
 <br>
+GIF of Page Refresh <br>
+![screenshot](./assets/Refresh.gif)
+<br>
+GIF of Page Offline <br>
+![screenshot](./assets/offline.gif)
 
 ## Contributing 
 ---
